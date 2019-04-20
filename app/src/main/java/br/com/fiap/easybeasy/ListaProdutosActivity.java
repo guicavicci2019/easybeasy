@@ -16,7 +16,7 @@ public class ListaProdutosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_produtos);
 
         String[] produtos = {"Tenis Adidas", "Jaqueta de Couro"};
-        ListView listaProdutos = (ListView) findViewById(R.id.lista_alunos);
+        ListView listaProdutos = (ListView) findViewById(R.id.lista_produtos);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, produtos);
         listaProdutos.setAdapter(arrayAdapter);
 

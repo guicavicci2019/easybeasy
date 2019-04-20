@@ -6,9 +6,10 @@
     android:orientation="vertical">
 
    <ListView
+
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:id="@+id/lista_alunos"/>
+       android:id="@+id/lista_produtos"/>
 
    <Button
        android:layout_width="56dp"

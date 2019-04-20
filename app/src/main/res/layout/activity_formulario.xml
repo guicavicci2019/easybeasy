@@ -11,28 +11,40 @@
         android:orientation="vertical">
 
         <EditText
-            android:hint="Nome"
+            android:hint="Nome do Produto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_nome"/>
 
         <EditText
-            android:hint="Endereco"
+            android:hint="Categoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_endereco"/>
+            android:id="@+id/formulario_categoria"/>
 
         <EditText
-            android:hint="Telefone"
+            android:hint="Valor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_telefone"/>
+            android:id="@+id/formulario_valor"/>
 
         <EditText
-            android:hint="Site"
+            android:hint="Local"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_site"/>
+            android:id="@+id/formulario_loja"/>
+
+        <EditText
+            android:hint="Endereço Local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_end_local"/>
+
+        <EditText
+            android:hint="Número Local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_numero_local"/>
 
         <RatingBar
             android:layout_width="wrap_content"

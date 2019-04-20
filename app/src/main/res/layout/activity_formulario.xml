@@ -29,22 +29,28 @@
             android:id="@+id/formulario_valor"/>
 
         <EditText
-            android:hint="Local"
+            android:hint="Loja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_loja"/>
 
         <EditText
-            android:hint="Endereço Local"
+            android:hint="Endereço Loja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_end_local"/>
+            android:id="@+id/formulario_end_loja"/>
 
         <EditText
-            android:hint="Número Local"
+            android:hint="Número Loja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_numero_local"/>
+            android:id="@+id/formulario_numero_loja"/>
+
+        <EditText
+            android:hint="Telefone Loja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_telefone_loja"/>
 
         <RatingBar
             android:layout_width="wrap_content"

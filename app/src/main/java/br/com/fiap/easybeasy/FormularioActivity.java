@@ -5,16 +5,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
+import br.com.fiap.easybeasy.dao.ProdutoDAO;
+import br.com.fiap.easybeasy.model.Produto;
+
 public class FormularioActivity extends AppCompatActivity {
+
+    private FormularioHelper formHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
+
+        formHelper = new FormularioHelper(this);
     }
 
     @Override
@@ -29,7 +34,13 @@ public class FormularioActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu_formulario_ok:
-                Toast.makeText(FormularioActivity.this, "Botão clicado!", Toast.LENGTH_SHORT).show();
+
+                Produto produto = formHelper.getProduto();
+                ProdutoDAO produtoDAO = new ProdutoDAO(this);
+                produtoDAO.add(produto);
+                produtoDAO.close();
+
+                Toast.makeText(FormularioActivity.this, produto.getNome() + " salvo!", Toast.LENGTH_SHORT).show();
                 finish();
                 break;
         }

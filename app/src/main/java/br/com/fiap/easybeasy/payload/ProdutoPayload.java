@@ -1,8 +1,6 @@
-package br.com.fiap.easybeasy.model;
+package br.com.fiap.easybeasy.payload;
 
-import android.text.Editable;
-
-public class Produto {
+public class ProdutoPayload {
 
     private Long id;
     private String nome;

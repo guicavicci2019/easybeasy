@@ -1,11 +1,11 @@
-package br.com.fiap.easybeasy.payload;
+package br.com.fiap.easybeasy.model;
 
-public class PayloadTeste {
+public class Teste {
 
-     private String userId;
-     private String id;
-     private String title;
-     private Boolean completed;
+    private String userId;
+    private String id;
+    private String title;
+    private Boolean completed;
 
     public String getUserId() {
         return userId;

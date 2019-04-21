@@ -49,10 +49,10 @@ public class ProdutoDAO extends SQLiteOpenHelper {
 
     }
 
-    public List<Produto> getProdutos() {
+    //public List<Produto> getProdutos() {
 
         //String
 
 
-    }
+   // }
 }

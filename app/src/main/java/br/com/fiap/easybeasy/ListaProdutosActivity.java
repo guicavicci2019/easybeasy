@@ -21,12 +21,12 @@ public class ListaProdutosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lista_produtos);
 
         ProdutoDAO produtoDAO = new ProdutoDAO(this);
-        List<Produto> produtos = produtoDAO.getProdutos();
+        //List<Produto> produtos = produtoDAO.getProdutos();
         produtoDAO.close();
 
         ListView listaProdutos = (ListView) findViewById(R.id.lista_produtos);
-        ArrayAdapter<Produto> arrayAdapter = new ArrayAdapter<Produto>(this, android.R.layout.simple_list_item_1, produtos);
-        listaProdutos.setAdapter(arrayAdapter);
+        //ArrayAdapter<Produto> arrayAdapter = new ArrayAdapter<Produto>(this, android.R.layout.simple_list_item_1, produtos);
+        //listaProdutos.setAdapter(arrayAdapter);
 
         Button novoAluno = findViewById(R.id.novo_produto);
         novoAluno.setOnClickListener(new View.OnClickListener() {

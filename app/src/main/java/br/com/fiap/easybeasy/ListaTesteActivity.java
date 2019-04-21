@@ -27,7 +27,15 @@ public class ListaTesteActivity extends AppCompatActivity {
         final ListView listaTeste = findViewById(R.id.lista_teste);
 
 
-        final TesteRest testeRest = ServiceGenerator.createService(TesteRest.class);
+    }
+
+    protected void onStart(){
+
+        super.onStart();
+
+        final ListView listaTeste = findViewById(R.id.lista_teste);
+
+        TesteRest testeRest = ServiceGenerator.createService(TesteRest.class);
 
         dialog = new ProgressDialog(ListaTesteActivity.this);
         dialog.setMessage("Carregando...");
@@ -49,7 +57,8 @@ public class ListaTesteActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Teste>> call, Throwable t) {
-
+                if (dialog.isShowing())
+                    dialog.dismiss();
                 Toast.makeText(getBaseContext(), "Problema", Toast.LENGTH_LONG);
 
             }
